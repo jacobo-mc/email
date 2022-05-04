@@ -1,0 +1,84 @@
+{
+   <bash>
+   Memcheck:Leak
+   fun:malloc
+   obj:*/bash
+}
+{
+   <openssl_centos6_i386_v1_0_1_compression_methods>
+   Memcheck:Leak
+   fun:malloc
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   fun:module_dir_init
+   fun:dcrypt_initialize
+   fun:main
+}
+{
+   <openssl_centos6_v1_0_1_compression_methods>
+   Memcheck:Leak
+   fun:malloc
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   obj:*
+   fun:module_dir_init
+   fun:dcrypt_initialize
+   fun:main
+}
+{
+   <openssl_jessie_v1_0_1_compression_methods>
+   Memcheck:Leak
+   fun:malloc
+   ...
+   fun:module_dir_init
+}
+{
+   <libunwind_backtrace>
+   Memcheck:Param
+   msync(start)
+   ...
+   obj:*libunwind*
+   ...
+   fun:backtrace_append
+   ...
+}
+{
+   <test_exit_addr8>
+   Memcheck:Addr8
+   fun:check_free
+   fun:free_key_mem
+   fun:__dlerror_main_freeres
+   fun:__libc_freeres
+   fun:_vgnU_freeres
+   fun:test_exit
+   ...
+}
+{
+   <libunwind_fedora32_v1_3_1_backtrace_write>
+   Memcheck:Param
+   write(buf)
+   ...
+   obj:*libunwind*
+   ...
+   fun:backtrace_append
+   ...
+   ...
+}
+{
+   <libicu_fedora32_v65_1>
+   Memcheck:Cond
+   obj:*libicuuc*
+   ...
+}
